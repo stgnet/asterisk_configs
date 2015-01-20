@@ -1,0 +1,195 @@
+<contacts 
+  group_name="internal"
+  editable="0"
+>
+  <contact
+    prefix=""
+    first_name="Ext 200"
+    second_name=""
+    last_name=""
+    suffix=""
+    organization=""
+    job_title=""
+    location=""
+    notes=""
+    contact_type="sip"
+    account_id="200"
+    subscribe_to="auto_hint_200"
+  >
+    <numbers>
+      <number dial="200" label="Extension" primary="1" />
+    </numbers>
+    <emails>
+      <email address="" label="Primary" primary="1" />
+    </emails>
+  </contact>
+  <contact
+    prefix=""
+    first_name="Ext 201"
+    second_name=""
+    last_name=""
+    suffix=""
+    organization=""
+    job_title=""
+    location=""
+    notes=""
+    contact_type="sip"
+    account_id="201"
+    subscribe_to="auto_hint_201"
+  >
+    <numbers>
+      <number dial="201" label="Extension" primary="1" />
+    </numbers>
+    <emails>
+      <email address="" label="Primary" primary="1" />
+    </emails>
+  </contact>
+  <contact
+    prefix=""
+    first_name="Ext 202"
+    second_name=""
+    last_name=""
+    suffix=""
+    organization=""
+    job_title=""
+    location=""
+    notes=""
+    contact_type="sip"
+    account_id="202"
+    subscribe_to="auto_hint_202"
+  >
+    <numbers>
+      <number dial="202" label="Extension" primary="1" />
+    </numbers>
+    <emails>
+      <email address="" label="Primary" primary="1" />
+    </emails>
+  </contact>
+  <contact
+    prefix=""
+    first_name="Ext 203"
+    second_name=""
+    last_name=""
+    suffix=""
+    organization=""
+    job_title=""
+    location=""
+    notes=""
+    contact_type="sip"
+    account_id="203"
+    subscribe_to="auto_hint_203"
+    has_voicemail="1"
+  >
+    <numbers>
+      <number dial="203" label="Extension" primary="1" />
+    </numbers>
+    <emails>
+      <email address="" label="Primary" primary="1" />
+    </emails>
+  </contact>
+  <contact
+    prefix=""
+    first_name="Ext 204"
+    second_name=""
+    last_name=""
+    suffix=""
+    organization=""
+    job_title=""
+    location=""
+    notes=""
+    contact_type="sip"
+    account_id="204"
+    subscribe_to="auto_hint_204"
+  >
+    <numbers>
+      <number dial="204" label="Extension" primary="1" />
+    </numbers>
+    <emails>
+      <email address="" label="Primary" primary="1" />
+    </emails>
+  </contact>
+  <contact
+    prefix=""
+    first_name="Ext 205"
+    second_name=""
+    last_name=""
+    suffix=""
+    organization=""
+    job_title=""
+    location=""
+    notes=""
+    contact_type="sip"
+    account_id="205"
+    subscribe_to="auto_hint_205"
+  >
+    <numbers>
+      <number dial="205" label="Extension" primary="1" />
+    </numbers>
+    <emails>
+      <email address="" label="Primary" primary="1" />
+    </emails>
+  </contact>
+  <contact
+    prefix=""
+    first_name="Ext 206"
+    second_name=""
+    last_name=""
+    suffix=""
+    organization=""
+    job_title=""
+    location=""
+    notes=""
+    contact_type="sip"
+    account_id="206"
+    subscribe_to="auto_hint_206"
+  >
+    <numbers>
+      <number dial="206" label="Extension" primary="1" />
+    </numbers>
+    <emails>
+      <email address="" label="Primary" primary="1" />
+    </emails>
+  </contact>
+  <contact
+    prefix=""
+    first_name="Ext 207"
+    second_name=""
+    last_name=""
+    suffix=""
+    organization=""
+    job_title=""
+    location=""
+    notes=""
+    contact_type="sip"
+    account_id="207"
+    subscribe_to="auto_hint_207"
+  >
+    <numbers>
+      <number dial="207" label="Extension" primary="1" />
+    </numbers>
+    <emails>
+      <email address="" label="Primary" primary="1" />
+    </emails>
+  </contact>
+  <contact
+    prefix=""
+    first_name="Ext 208"
+    second_name=""
+    last_name=""
+    suffix=""
+    organization=""
+    job_title=""
+    location=""
+    notes=""
+    contact_type="sip"
+    account_id="208"
+    subscribe_to="auto_hint_208"
+  >
+    <numbers>
+      <number dial="208" label="Extension" primary="1" />
+    </numbers>
+    <emails>
+      <email address="" label="Primary" primary="1" />
+    </emails>
+  </contact>
+</contacts>
