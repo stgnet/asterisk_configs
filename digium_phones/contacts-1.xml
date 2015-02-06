@@ -1,0 +1,38 @@
+<contacts 
+  group_name="Scott"
+  editable="0"
+>
+  <contact
+    prefix=""
+    first_name="Network Help"
+    second_name=""
+    last_name=""
+    suffix=""
+    organization=""
+    job_title=""
+    location=""
+    notes=""
+    contact_type="sip"
+    account_id="210"
+    subscribe_to="auto_hint_210"
+    has_voicemail="1"
+    can_intercom="1"
+  >
+    <numbers>
+      <number dial="210" label="Extension" primary="1" />
+    </numbers>
+    <emails>
+      <email address="" label="Primary" primary="1" />
+    </emails>
+  </contact>
+  <contact
+    first_name="Scott's New Cell"
+    last_name=""
+    organization=""
+    contact_type="sip|external"
+  >
+    <numbers>
+      <number dial="2564281098" label="Extension" primary="1" />
+    </numbers>
+  </contact>
+</contacts>
