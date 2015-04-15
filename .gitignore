@@ -1,3 +1,8 @@
 res_digium_phone_line_secret.conf
 SAVE
 *-original.conf
+pjsip-auth-dpma.conf
+pjsip-endpoints.conf
+res_digium_phone_lines.conf
+res_digium_phone_network_auto.conf
+res_digium_phone_phones.conf
