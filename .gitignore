@@ -6,3 +6,4 @@ pjsip-endpoints.conf
 res_digium_phone_lines.conf
 res_digium_phone_network_auto.conf
 res_digium_phone_phones.conf
+voicemail-users.conf

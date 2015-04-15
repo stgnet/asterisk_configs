@@ -80,8 +80,11 @@ function validExt($number)
 	if ($number[0] == '0') {
 		return false;
 	}
-	if ($number[1] == '1') {
+	if ($number[0] == '1') {
 		return false;
+	}
+	if ($number[0] == '9') {
+			return false;
 	}
 	if (strlen($number) == 3) {
 		if ($number[1] == '1' && $number[2] == '1') {
@@ -95,7 +98,7 @@ function validExt($number)
 
 $users=array();
 
-while (count($users) < 2000)
+while (count($users) < 7690)
 {
 	$phone = $valid_area_codes[array_rand($valid_area_codes)];
 	$phone .= $faker->numberBetween(2000000,9999999);
@@ -107,6 +110,8 @@ while (count($users) < 2000)
 	$lname = $faker->lastName;
 
 	$vmpin = $faker->numerify('####');
+	while ($vmpin == '1234')
+		$vmpin = $faker->numerify('####');
 
 	$ext = extensionFromName($fname, $lname);
 	$ext3 = substr($ext, 0, 3);
@@ -117,12 +122,31 @@ while (count($users) < 2000)
 		}
 	}
 	if (!validExt($ext)) {
-		echo "Ext $ext is not valid\n";
+		//echo "Ext $ext is not valid\n";
 		continue;
 	}
 	if (!empty($users[$ext])) {
 		//echo "Ext $ext already exists\n";
-		continue;
+
+		// try other random variations
+		$ext[rand(1,strlen($ext)-1)]=rand(0,9);
+		if (!empty($users[$ext]) && rand(0,1))
+			$ext[rand(1,strlen($ext)-1)]=rand(0,9);
+		if (!empty($users[$ext]) && rand(0,1))
+			$ext[rand(1,strlen($ext)-1)]=rand(0,9);
+		if (!validExt($ext) || !empty($users[$ext]))
+		{
+			// try 3 digit also
+			$ext=$ext3;
+			$ext[rand(1,strlen($ext)-1)]=rand(0,9);
+			if (!empty($users[$ext]) && rand(0,1))
+				$ext[rand(1,strlen($ext)-1)]=rand(0,9);
+			if (!validExt($ext) || !empty($users[$ext]))
+			{
+				//echo "Ext $ext isn't working either\n";
+				continue;
+			}
+		}
 	}
 	$user = array(
 		'extension' => $ext,
@@ -133,7 +157,7 @@ while (count($users) < 2000)
 	);
 	//print_r($user);
 	$users[$ext]=$user;
-	echo count($users)."\n";
+	echo count($users).' '.$ext."\n";
 }
 
 ksort($users);
