@@ -5,7 +5,7 @@ AUTHNAME=dpmauser
 IP=$(shell ip addr show |fgrep 'inet ' |fgrep -v 127.0.0.1 | sed 's/ *inet \([0-9.]*\).*/\1/')
 CIDR=$(shell ip addr show |fgrep 'inet ' |fgrep -v 127.0.0.1 | sed 's/ *inet \([0-9./]*\).*/\1/')
 
-pjsip-endpoints: FORCE
+pjsip-endpoints.conf: FORCE
 	echo "; $@ created by Makefile - DO NOT CHANGE" > $@
 	( read HEADER ; while read LINE ;\
 	do \
